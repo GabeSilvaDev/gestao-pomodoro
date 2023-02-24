@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gestão Tempo Pomodoro</title>
+</head>
+<body>
+    <div class="main">
+
+        <div class="turns">1/4</div>
+        
+        <div class="time-container">
+            <svg width="200" height="200" class="circle-container">
+                <circle r="95" cx="100" cy="100" class="background-circle" />
+                <circle r="95" cx="100" cy="100" class="circle" />
+            </svg>
+            <div class="time">25:00</div>
+        </div>
+
+        <div class="time-mode">Trabalho</div>
+
+        <div>
+            <button class="timer-control">Iniciar</button>
+            <button class="reset-button">Reiniciar</button>
+        </div>
+    </div>
+
+    <audio id="notification">
+        <source src="notificacao.mp3">
+    </audio>
+
+
+    <script src="scripts.js"></script>
+</body>
+</html>
